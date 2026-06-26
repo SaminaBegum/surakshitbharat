@@ -153,9 +153,15 @@ const app = express();
 
 console.log("APP CREATED");
 
+const cors = require("cors");
+
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: [
+      "https://surakshitbharat-frontend.vercel.app",
+      "http://localhost:5173",
+      "http://localhost:8080"
+    ],
     credentials: true,
   })
 );
