@@ -153,7 +153,7 @@ const app = express();
 
 console.log("APP CREATED");
 
-const cors = require("cors");
+
 
 app.use(
   cors({
